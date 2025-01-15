@@ -1,0 +1,6 @@
+mysql-connector-python~=9.1.0
+sqlalchemy
+langchain~=0.3.14
+python-dotenv~=1.0.1
+langchain-community~=0.3.14
+langchain-openai~=0.3.0
