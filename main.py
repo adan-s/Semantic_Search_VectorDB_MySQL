@@ -2,8 +2,6 @@ from database.db import add_article, fetch_articles, fetch_all_articles
 from utils.search import semantic_search
 from langchain.agents import initialize_agent, Tool
 from langchain_openai import ChatOpenAI
-import os
-import getpass
 from dotenv import load_dotenv
 
 # Load environment variables

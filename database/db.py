@@ -54,9 +54,7 @@ def fetch_articles(query):
 
 def fetch_all_articles():
     """Fetch all articles from the database."""
-    cursor = conn.cursor()
-    query = "SELECT * FROM Articles"
-    cursor.execute(query)
+    sql_query = "SELECT * FROM Articles"
+    cursor.execute(sql_query)
     articles = cursor.fetchall()
-    cursor.close()
     return articles
