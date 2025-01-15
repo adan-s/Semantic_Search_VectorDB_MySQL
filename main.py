@@ -9,9 +9,6 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-if not os.environ.get("OPENAI_API_KEY"):
-    os.environ["OPENAI_API_KEY"] = getpass.getpass("Please enter your OpenAI API key: ")
-
 # Define the search tool
 def search_tool_function(query):
     articles = fetch_articles(query)
